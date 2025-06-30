@@ -1,0 +1,50 @@
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  overflow-x: hidden;
+}
+
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.main-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-top: 20vh;
+}
+
+.title {
+  font-size: 3.5rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+    padding: 0 20px;
+  }
+
+  .main-content {
+    padding-top: 15vh;
+  }
+}
